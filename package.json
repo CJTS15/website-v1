@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "<h1>Hello Github World.</h1>",
+  "main": "index.js",
+  "scripts": {
+    "build:tailwinds": "tailwind build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJTS15/cjts15.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CJTS15/cjts15.github.io/issues"
+  },
+  "homepage": "https://github.com/CJTS15/cjts15.github.io#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
