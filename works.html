@@ -14,40 +14,24 @@
     <title>Hello! I'm CJ | WordPress Developer & Virtual Assistant</title>
 </head>
 <body class="bg-blue-100 dark:bg-gray-800 transition-colors duration-300">
-    <!-- Header -->
-    <header>
-        <nav x-data="{isOpen: false}" class="container flex items-center py-5 sm:mt12">
-            <div class="py-1 block dark:hidden"><a href="https://cjts15.github.io/"><img class="w-6/12" src="public/imgs/dark-logo.png" alt=""></a></div>
-            <div class="py-1 hidden dark:block"><a href="https://cjts15.github.io/"><img class="w-6/12" src="public/imgs/light-logo.png" alt=""></a></div>
-            
-            <button @click="isOpen = !isOpen" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
-                    viewBox="0 0 24 24" stroke="#242A45">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            
-            <ul id="menu" class="hidden sm:flex flex-1 justify-end items-center gap-12 text-custom-blue dark:text-gray-200 uppercase text-sm font-bold">
-                <a href="/#about-me"><li class="cursor-pointer">About Me</li></a>
-                <a href="/#my-works"><li class="cursor-pointer">Works</li></a>
-                <a href="https://thetechwolfcave.wordpress.com/"><li class="cursor-pointer">Blogs</li></a>
-                <a href="https://www.linkedin.com/in/cjsabijon/"><li class="cursor-pointer">Connect With Me</li></a>
-                <i class="fas fa-adjust cursor-pointer" id="switch_toggle" onclick="toggleDark()"></i>
-            </ul>
+    
+       <!-- Header -->
+       <header>
+        <nav role="navigation" class="flex justify-between items-center h-28 py-5 lg:px-80 text-custom-blue dark:text-gray-200">
+            <div class="py-2 block dark:hidden"><a href="https://cjts15.github.io/"><img class="w-6/12 sm:w-5/12" src="public/imgs/dark-logo.png" alt=""></a></div>
+            <div class="py-2 hidden dark:block"><a href="https://cjts15.github.io/"><img class="w-6/12 sm:w-5/12" src="public/imgs/light-logo.png" alt=""></a></div>
 
-           <div class="mobile-navbar">
-                    <!-- navbar wrapper -->
-                <div class="fixed left-0 w-full h-42 p-5 bg-white rounded-lg shadow-xl top-16" x-show="isOpen"
-                    @click.away=" isOpen = false">
-                    <ul id="menu" class="flex-col text-custom-blue dark:text-gray-200 uppercase text-sm font-bold">
-                        <a href="#about-me"><li class="cursor-pointer">About Me</li></a>
-                        <a href="#my-works"><li class="cursor-pointer">Works</li></a>
-                        <a href="https://thetechwolfcave.wordpress.com/"><li class="cursor-pointer">Blogs</li></a>
-                        <a href="https://www.linkedin.com/in/cjsabijon/"><li class="cursor-pointer">Connect With Me</li></a>
-                        <i class="fas fa-adjust cursor-pointer" id="switch_toggle" onclick="toggleDark()"></i>
-                    </ul>
-                </div>
+            <div class="px-4 cursor-pointer dark:text-custom-white md:hidden" id="bars">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+            </div>
+            <div class="hidden md:block" id="menu">
+                <a href="/#about-me" class="p-4 cursor-pointer">About Me</a>
+                <a href="/#my-works" class="p-4 cursor-pointer">Works</a>
+                <a href="https://thetechwolfcave.wordpress.com/" class="p-4 cursor-pointer">Blogs</a>
+                <a href="https://www.linkedin.com/in/cjsabijon/" class="p-4 cursor-pointer">Connect With Me</a>
+                <i class="p-4 fas fa-adjust cursor-pointer" id="switch_toggle" onclick="toggleDark()"></i>
             </div>
         </nav>
     </header>
@@ -81,7 +65,7 @@
      <div id="my-works" class="relative bg-blue-100 dark:bg-gray-800">
         <section class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
             <div class="flex flex-1 flex-col items-center py-12">
-                <h2 class="text-custom-blue dark:text-custom-white text-3xl font-bold md:text-4 lg:text-5xl text-center lg:text-left mb-6">My Works</h2>
+                <h2 class="text-custom-blue dark:text-custom-white text-5xl font-bold md:text-4 text-center mb-6">My Works</h2>
             </div>
             <div x-data="{}" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
@@ -228,8 +212,8 @@
         </section>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-blue-100 dark:bg-gray-800 py-6">
+   <!-- Footer -->
+   <footer class="bg-blue-100 dark:bg-gray-800 h-16 py-20">
         <div class="flex flex-1 flex-col items-center">
             <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start">
                 <p class="text-gray-700 dark:text-gray-200 text-lg mb-6">Created With ❤</p>
@@ -238,6 +222,7 @@
     </footer>
 
     <script src="public/darkmode.js"></script>
-    
+    <script src="public/appmenu.js"></script>
+
 </body>
 </html>
