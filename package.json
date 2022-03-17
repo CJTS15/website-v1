@@ -17,7 +17,9 @@
     "url": "https://github.com/CJTS15/cjts15.github.io/issues"
   },
   "homepage": "https://github.com/CJTS15/cjts15.github.io#readme",
-  "dependencies": {
-    "tailwindcss": "^2.2.19"
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
   }
 }
