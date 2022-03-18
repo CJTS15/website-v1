@@ -8,7 +8,7 @@ bars.addEventListener('click', () => {
             'flex',
             'flex-col',
             'items-center',
-            'bg-blue-200',
+            'bg-blue-500',
             'dark:bg-gray-800',
             'w-full',
             'absolute',
