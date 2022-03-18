@@ -8,11 +8,12 @@ bars.addEventListener('click', () => {
             'flex',
             'flex-col',
             'items-center',
-            'bg-blue-500',
-            'dark:bg-gray-800',
+            'bg-blue-200',
+            'dark:bg-gray-900',
             'w-full',
             'absolute',
-            'top-28'   
+            'top-28',
+            'z-10'
         );
         }
         else {
@@ -31,8 +32,10 @@ window.addEventListener('resize', () => {
         'flex-col',
         'text-center',
         'bg-blue-200',
+        'dark:bg-gray-900',
         'w-full',
         'absolute',
-        'top-28'   
+        'top-28',
+        'z-10'
     );
 })
