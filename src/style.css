@@ -15,3 +15,11 @@
 .btn-white {
   @apply bg-custom-white;
 }
+/* 
+.bg-dark {
+  @apply custom-bg-dark;
+}
+
+.bg-dark1 {
+  @apply custom-bg-dark1;
+} */

@@ -9,6 +9,8 @@ module.exports = {
         "custom-blue": "#242A45",
         "custom-grey": "#9194A2",
         "custom-white": "#f7f7f7",
+        "custom-bg-dark": "#272830",
+        "custom-bg-dark1": "#2b2c34",
       },
     },
     fontFamily: {
