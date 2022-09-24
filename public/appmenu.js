@@ -1,5 +1,6 @@
 const bars = document.querySelector('#bars')
 const menu = document.querySelector('#menu')
+const fmenu = document.querySelector('#fmenu')
 
 bars.addEventListener('click', () => {
     if(menu.classList.contains('hidden') && window.innerWidth < 768) {
@@ -7,13 +8,10 @@ bars.addEventListener('click', () => {
         menu.classList.add(
             'flex',
             'flex-col',
-            'items-center',
-            'bg-blue-200',
-            'dark:bg-gray-900',
             'w-full',
             'absolute',
             'top-28',
-            'z-10'
+            'z-20'
         );
         }
         else {
@@ -26,16 +24,14 @@ menu.addEventListener('click', () => {
 })
 
 window.addEventListener('resize', () => {
+    fmenu.classList.add('hidden');
     menu.classList.add('hidden');
     menu.classList.remove(
         'flex',
         'flex-col',
-        'text-center',
-        'bg-blue-200',
-        'dark:bg-gray-900',
         'w-full',
         'absolute',
         'top-28',
-        'z-10'
+        'z-20'
     );
 })

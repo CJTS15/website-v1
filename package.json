@@ -4,7 +4,8 @@
   "description": "<h1>Hello Github World.</h1>",
   "main": "index.js",
   "scripts": {
-    "build:tailwinds": "tailwind build src/style.css -o public/style.css"
+    "build": "tailwindcss -i src/style.css -o public/style.css",
+    "watch": "tailwindcss -i src/style.css -o public/style.css --watch"
   },
   "repository": {
     "type": "git",

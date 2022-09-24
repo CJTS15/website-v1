@@ -1,7 +1,17 @@
 module.exports = {
-  purge: [],
+  content: [
+    './*.html',
+    './public/*.{html,js}',
+    './src/**/*.{html,js}',
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px'
+    },
     extend: {
       colors: {
         "custom-purple": "#5267DF",
@@ -19,11 +29,6 @@ module.exports = {
     container: {
       center: true,
       padding: "1rem",
-      screens: {
-        lg: "1124px",
-        xl: "1124px",
-        "2xl": "1124px",
-      },
     },
 
   },
