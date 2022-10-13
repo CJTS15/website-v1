@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A motivated web developer with expertise in WordPress. With ample experience working in a digital marketing company as a Web and IT Assistant.">
+    <meta name="keywords" content="web developer, developer, information technology, expert, digital marketing, tech support, tech community">
+    <meta name="author" content="CJ Sabijon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social Media Sharing -->
+    <meta property="og:image" content="/public/imgs/the-techwolf-seo-banner.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cjts15.github.io/">
+    <meta property="og:title" content="Hello! I'm CJ | My Works">
+    <meta property="og:description" content="A motivated web developer with expertise in WordPress. With ample experience working in a digital marketing company as a Web and IT Assistant.">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
@@ -25,30 +38,44 @@
     gtag('config', 'G-8H9KXVPB15');
     </script>
 
-    <title>Hello! I'm CJ | WordPress Developer & Virtual Assistant</title>
+    <title>Hello! I'm CJ | My Works</title>
 </head>
-<body class="bg-blue-100 dark:bg-gray-800 transition-colors duration-300">
-    
+<body>
        <!-- Header -->
-       <header>
-        <nav role="navigation" class="flex justify-between items-center h-28 py-5 lg:px-80 text-custom-blue dark:text-gray-200">
-            <div class="py-2 block dark:hidden"><a href="https://cjts15.github.io/"><img class="w-6/12 sm:w-5/12" src="public/imgs/dark-logo.png" alt=""></a></div>
-            <div class="py-2 hidden dark:block"><a href="https://cjts15.github.io/"><img class="w-6/12 sm:w-5/12" src="public/imgs/light-logo.png" alt=""></a></div>
-
-            <div class="px-4 cursor-pointer dark:text-custom-white md:hidden" id="bars">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-            </div>
-            <div class="hidden md:block" id="menu">
-                <a href="/#about-me" class="p-4 cursor-pointer">About Me</a>
-                <a href="/#my-works" class="p-4 cursor-pointer">Works</a>
-                <a href="https://thetechwolfcave.wordpress.com/" class="p-4 cursor-pointer">Blogs</a>
-                <a href="https://www.linkedin.com/in/cjsabijon/" class="p-4 cursor-pointer">Connect With Me</a>
-                <i class="p-4 fas fa-adjust cursor-pointer" id="switch_toggle" onclick="toggleDark()"></i>
-            </div>
-        </nav>
-    </header>
+       <div class="bg-gray-100 dark:bg-custom-bg-dark1 transition-colors duration-300">
+        <header>
+            <nav class="p-5 md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center ">
+                    <div class="py-2 block dark:hidden"><a href="https://cjts15.github.io/"><img class="w-6/12 sm:w-5/12" src="public/imgs/dark-logo.png" alt=""></a></div>
+                    <div class="py-2 hidden dark:block"><a href="https://cjts15.github.io/"><img class="w-6/12 sm:w-5/12" src="public/imgs/light-logo.png" alt=""></a></div>
+    
+                    <div class="px-4 cursor-pointer dark:text-custom-white md:hidden block">
+                        <i class="p-4 fa-solid fa-ellipsis-vertical cursor-pointer name="menu" id="switch_menu" onclick="toggleMenu()"></i>
+                    </div>
+                </div>
+            
+                <ul class="lg:bg-transparent md:bg-transparent bg-gray-200 dark:bg-custom-bg-dark md:flex md:items-center z-[1] 
+                md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 
+                md:pl-0 pl-7 top-[-400px] mt-10 transition-all ease-in duration-300" id="menuList">
+                  <li class="mx-4 my-6 md:my-0">
+                    <a href="/#about-me" class="p-4 cursor-pointer hover:bg-slate-800 hover:text-custom-white text-lg dark:hover:bg-gray-300 dark:hover:text-custom-bg-dark1 dark:text-custom-white">About Me</a>
+                  </li>
+                  <li class="mx-4 my-6 md:my-0">
+                    <a href="/#my-works" class="p-4 cursor-pointer hover:bg-slate-800 hover:text-custom-white text-lg dark:hover:bg-gray-300 dark:hover:text-custom-bg-dark1 dark:text-custom-white text-lg">Works</a>
+                  </li>
+                  <li class="mx-4 my-6 md:my-0">
+                    <a href="https://thetechwolfcave.wordpress.com/" class="p-4 cursor-pointer hover:bg-slate-800 hover:text-custom-white text-lg dark:hover:bg-gray-300 dark:hover:text-custom-bg-dark1 dark:text-custom-white text-lg">Blogs</a>
+                  </li>
+                  <li class="mx-4 my-6 md:my-0">
+                    <a href="https://www.linkedin.com/in/cjsabijon/" class="p-4 cursor-pointer hover:bg-slate-800 hover:text-custom-white text-lg dark:hover:bg-gray-300 dark:hover:text-custom-bg-dark1 dark:text-custom-white text-lg">Connect With Me</a>
+                  </li>
+                  <li class="mx-4 my-6 md:my-0">
+                    <i class="p-4 fa-solid fa-lightbulb cursor-pointer dark:text-custom-white text-custom-bg-dark1" id="switch_toggle" onclick="toggleDark()"></i>
+                  </li>
+                </ul>
+              </nav>
+        </header>
+    </div>
 
     <!-- Alpine.js Lightbox  -->
     <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
@@ -76,10 +103,10 @@
       </div>
 
      <!-- Hero -->
-     <div id="my-works" class="relative bg-blue-100 dark:bg-gray-800 p-5 lg:px-60">
-        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 py-10">
+     <div id="my-works" class="bg-gray-100 dark:bg-custom-bg-dark1 p-5 lg:px-40 lg:py-20">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6">
             <div class="flex flex-1 flex-col items-center py-12">
-                <h2 class="text-custom-blue dark:text-custom-white text-3xl sm:text-4xl font-bold text-left sm:text-center">My Works</h2>
+                <h2 class="text-custom-blue dark:text-custom-white text-3xl sm:text-4xl font-bold text-left sm:text-center">My Portfolio</h2>
             </div>
             <div x-data="{}" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
@@ -227,7 +254,7 @@
     </div>
 
    <!-- Footer -->
-   <footer class="bg-blue-100 dark:bg-gray-800 h-16 py-20">
+   <footer class="bg-white dark:bg-custom-bg-dark py-8">
         <div class="flex flex-1 flex-col items-center">
             <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start">
                 <p class="text-gray-700 dark:text-gray-200 text-lg mb-6">Created With ❤</p>
