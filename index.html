@@ -41,8 +41,6 @@
     <title>Hello! I'm CJ | WordPress Developer & Virtual Assistant</title>
 </head>
 <body class="bg-gray-100 dark:bg-custom-bg-dark1 transition-colors duration-300">
-<!-- "bg-blue-100 dark:bg-gray-800 transition-colors duration-300" -->
-    
     <div class="relative bg-transparent z-10">
         <header>
             <nav class="p-5 md:flex md:items-center md:justify-between">
@@ -176,7 +174,7 @@
     <div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
         <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
           <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" 
-          x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" 
+          x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-200" 
           x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" 
           x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
             <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
@@ -189,8 +187,8 @@
                 </button>
               </div>
               <div class="p-2">
-                <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
-                <p x-text="imgModalDesc" class="text-white dark:text-gray-200 text-lg text-center"></p>
+                <p x-text="imgModalDesc" class="mb-2 text-white dark:text-gray-200 text-lg text-center"></p>
+                <img :alt="imgModalSrc" class="object-contain h-1/2-screen rounded-md" :src="imgModalSrc">
               </div>
             </div>
           </div>
@@ -206,64 +204,64 @@
             <div x-data="{}" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/1.webp', imgModalDesc: 'Red Footprint Business Consultancy' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/1.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/amzpecty-full.webp', imgModalDesc: 'Amzpecty' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/amzpecty-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/2.webp', imgModalDesc: 'Sherri Goodall' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/2.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/autobacs-jp-full.webp', imgModalDesc: 'AUTOBACS JP' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/autobacs-jp-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/3.webp', imgModalDesc: 'Full Circle Digital Marketing Agency' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/3.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/autobacs-tpl-full.webp', imgModalDesc: 'AUTOBACS TPL' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/autobacs-tpl-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/4.webp', imgModalDesc: 'Brookside Barbershop' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/4.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/cafe-209-full.webp', imgModalDesc: 'Cafe 209' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/cafe-209-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/5.webp', imgModalDesc: 'Workmatic Industrial Solution, Inc.' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/5.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/fdmg-209-full.webp', imgModalDesc: 'Full Digital Marketing Group' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/fdmg-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/6.webp', imgModalDesc: 'Mackie 2 Heating & Air Conditioning, LLC.' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/6.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/gabcc-full.webp', imgModalDesc: 'GABCC' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/gabcc-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/7.webp', imgModalDesc: 'Palmetto Pool Company, Inc.' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/7.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/hannibal-full.webp', imgModalDesc: 'Hannibal International Imports' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/hannibal-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/8.webp', imgModalDesc: 'Real ONE Group Universal' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/8.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/harden-life-insurance-full.webp', imgModalDesc: 'Harden Life Insurance' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/harden-life-insurance-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
                 <div class="w-full bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
                     <div class="w-full h-80">
-                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/imgs/9.webp', imgModalDesc: 'Infinity Hub' })" class="cursor-pointer">
-                            <img class="object-center object-cover w-full h-full" src="public/imgs/9.webp" alt="photo">
+                        <a @click="$dispatch('img-modal', {  imgModalSrc: 'public/works/ih-full.webp', imgModalDesc: 'Infinity Hub Digital Marketing' })" class="cursor-pointer">
+                            <img class="object-center object-cover w-full h-full scale-100 hover:scale-110 ease-in duration-200" src="public/works/ih-thumbnail.webp" alt="photo">
                         </a>
                     </div>
                 </div>
