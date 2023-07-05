@@ -1,5 +1,4 @@
-// Responsive Menu Nav
-
+// Dark/Light Switcher
 const switchMenu = document.querySelector('#switch_menu');
 const list = document.querySelector('#menuList');
 
@@ -36,15 +35,12 @@ function backToTop() {
 }
 
 // Auto Update Year
-
 const date = new Date();
 let year = date.getFullYear();
 
 document.getElementById("year").innerHTML = '| &nbsp;' + year + '&nbsp; |';
 
 // Beshifier
-    
-// Here the value is stored in new variable x 
 function beshifier() {
     var text = document.getElementById("text").value;
     document.getElementById("beshifier").innerHTML = text.replace(/\s/g, "🤸");
@@ -54,6 +50,7 @@ function beshifier() {
     alert.classList.add("hidden");
 }
 
+// Click to Copy
 function copyText(id) {
   var r = document.createRange();
   r.selectNode(document.getElementById(id));
