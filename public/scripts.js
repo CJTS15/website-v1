@@ -44,7 +44,6 @@ document.getElementById("year").innerHTML = '| &nbsp;' + year + '&nbsp; |';
 function beshifier() {
     var text = document.getElementById("text").value;
     document.getElementById("beshifier").innerHTML = text.replace(/\s/g, "🤸");
-    document.getElementById("copy").innerHTML = "Click to copy text";
 
     var alert = document.getElementById("alertBox");
     alert.classList.add("hidden");
