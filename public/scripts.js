@@ -41,3 +41,30 @@ const date = new Date();
 let year = date.getFullYear();
 
 document.getElementById("year").innerHTML = '| &nbsp;' + year + '&nbsp; |';
+
+// Beshifier
+    
+// Here the value is stored in new variable x 
+function beshifier() {
+    var text = document.getElementById("text").value;
+    document.getElementById("beshifier").innerHTML = text.replace(/\s/g, "🤸");
+    document.getElementById("copy").innerHTML = "Click to copy text";
+
+    var alert = document.getElementById("alertBox");
+    alert.classList.add("hidden");
+}
+
+function copyText(id) {
+  var r = document.createRange();
+  r.selectNode(document.getElementById(id));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(r);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+
+  var alert = document.getElementById("alertBox");
+  alert.classList.remove("hidden");
+}
+
+
+  

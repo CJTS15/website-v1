@@ -82,28 +82,40 @@
     </div>
 
     <!-- Section 1 -->
-    <div class="p-5 lg:px-80 lg:py-20 transition-colors duration-300 h-screen">
-      <div class="mr-auto ml-auto lg:w-2/6 xl:w-2/7 sm:w-full md:w-2/3 bg-white shadow-lg transform duration-200 easy-in-out pb-8 rounded-lg animate__animated animate__fadeInUp">
-          <div class=" h-32 overflow-hidden m-0">
-              <img class="w-full m-0" src="public/imgs/shattered-island.png" alt="" />
-          </div>
-          <div class="flex justify-center px-5 -mt-12">
-              <img class="h-32 w-32 bg-white p-2 rounded-full" src="public/imgs/links-prof-pic.webp" alt="" />
+    <div class="p-3 lg:px-80 lg:py-20 transition-colors duration-300 h-screen">
+      <div class="mr-auto ml-auto lg:w-2/6 xl:w-2/7 sm:w-full md:w-2/3 bg-white dark:bg-custom-bg-dark shadow-lg transform duration-200 easy-in-out p-3 rounded-lg animate__animated animate__fadeInUp">
+        
+        <div class="flex flex-1 flex-col items-center py-12">
+            <h2 class="text-custom-blue dark:text-custom-white text-3xl sm:text-4xl font-bold text-left sm:text-center">Beshifier</h2>
+            <a class="text-gray-400 mt-2 hover:text-blue-500" href="https://cjts15.github.io/" target="BLANK()">@cj_wolfy15</a>
+        </div>
 
-          </div>
-          <div class="">
-              <div class="text-center px-12">
-                  <h2 class="text-gray-800 text-3xl font-bold">CJ Sabijon</h2>
-                  <a class="text-gray-400 mt-2 hover:text-blue-500" href="https://cjts15.github.io/" target="BLANK()">@cj_wolfy15</a>
-                  <p class="mt-2 text-gray-500 text-sm">♒ | Tech | Gamer | Developer | 💻 Support | </br> 👨🏻‍💻 GDG | 👨🏻‍💻 DEVCON</p>
-              </div>              
-          </div>
-          <div class="flex flex-col space-y-1 mt-4 items-center max-w-full ">
-            <a href="https://cjts15.github.io/"><button type="button" class="hover:scale-[1.099] w-64 lg:w-96 md:w-96 btn bg-gradient-to-r from-green-500 to-blue-500 text-white">Website</button></a>
-            <a href="https://thetechwolfcave.wordpress.com/"><button type="button" class="hover:scale-[1.099] w-64 lg:w-96 md:w-96 btn bg-gradient-to-r from-green-500 to-blue-500 text-white ">Blog</button></a>
-            <a href="https://www.linkedin.com/in/cjsabijon/"><button type="button" class="hover:scale-[1.099] w-64 lg:w-96 md:w-96 btn bg-gradient-to-r from-green-500 to-blue-500 text-white ">LinkedIn</button></a>
-            <a href="https://youtube.com/channel/UCO0VebhOX9eKVVYa1_PXnFg?sub_confirmation=1"><button type="button" class="hover:scale-[1.099] w-64 lg:w-96 md:w-96 btn bg-gradient-to-r from-green-500 to-blue-500 text-white ">Youtube</button></a>
-          </div>
+        <form>
+            <label for="text" class="sr-only">Your Text Here</label>
+            <div class="flex items-center px-3 py-2 rounded-l">
+                <textarea id="text" rows="2" class="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 
+                dark:bg-custom-bg-dark1 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Text Here..."></textarea>
+                    <button type="button" class="inline-flex justify-center p-2 text-blue-600 rounded-full cursor-pointer
+                     hover:bg-blue-100 dark:text-blue-500 dark:hover:bg-gray-600" onclick="beshifier()">
+                    <svg class="w-5 h-5 rotate-90" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                        <path d="m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z"/>
+                    </svg>
+                    <span class="sr-only">Beshify</span>
+                </button>
+            </div>
+        </form>
+
+        <div class="flex flex-1 flex-col items-center py-6">
+            <p id="beshifier" class="px-3 text-gray-700 dark:text-gray-200 text-center"></p>
+            <button id="copy" onclick="copyText('beshifier')" class="px-3 text-gray-700 dark:text-gray-200 text-center cursor-pointer"></button>
+        </div>
+
+        <div id="alertBox" class="flex flex-1 flex-col items-center py-6 duration-200 animate__animated animate__fadeInUp hidden">
+            <div class="p-2 bg-gray-100 dark:bg-custom-bg-dark1  items-center text-white leading-none rounded-full flex lg:inline-flex" role="alert">
+              <span class="flex rounded-full bg-blue-500 text-white uppercase px-2 py-1 text-xs font-bold mr-3">Copied!</span>
+              <span class="font-semibold mr-2 text-left flex-auto text-custom-blue dark:text-gray-200">Text Copied Successfuly</span>
+            </div>
+        </div>
       </div>
     </div>
 
