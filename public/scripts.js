@@ -43,7 +43,8 @@ document.getElementById("year").innerHTML = '| &nbsp;' + year + '&nbsp; |';
 // Beshifier
 function beshifier() {
     var text = document.getElementById("text").value;
-    document.getElementById("beshifier").innerHTML = text.replace(/\s/g, "🤸");
+    var upperText = text.toUpperCase();
+    document.getElementById("beshifier").innerHTML = upperText.replace(/\s/g, "🤸");
 
     var alert = document.getElementById("alertBox");
     alert.classList.add("hidden");
